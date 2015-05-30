@@ -103,3 +103,16 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
+.features {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    width: 280px;
+    margin-top: 60px;
+  }
+}
