@@ -142,18 +142,28 @@ a {
 }
 
 .features {
-  margin: 0 auto;
-  width: 600px;
+  margin: 25px auto;
+  width: 900px;
   text-align: center;
 
   li {
     list-style-type: none;
     display: inline-block;
-    width: 280px;
+    float: left;
+    width: 300px;
     padding: 25px;
 
     h2 {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      width: 100%;
+    }
+    .desc {
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    &:hover {
+      background: #f9f9f9;
     }
   }
 }
