@@ -93,9 +93,21 @@ body {
 
         .badges {
           margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
 
           li {
             list-style-type: none;
+            display: inline-block;
+
+            &:not(:first-child) {
+              margin-left: 15px;
+            }
+
+            img {
+              width: 172px;
+            }
           }
         }
       }
