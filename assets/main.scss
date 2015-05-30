@@ -8,7 +8,7 @@ $sans-serif-font: 'Lato', sans-serif;
 $header-z: 0;
 $main-z: 1;
 
-$header-height: 600px;
+$header-height: 750px;
 $footer-height: 100px;
 
 $header-background: linear-gradient(to bottom,
@@ -113,6 +113,10 @@ a {
     list-style-type: none;
     display: inline-block;
     width: 280px;
-    margin-top: 60px;
+    padding: 25px;
+
+    h2 {
+      font-size: 1.2em;
+    }
   }
 }
