@@ -11,6 +11,8 @@ $main-z: 1;
 $header-height: 750px;
 $footer-height: 100px;
 
+$text-color: #333;
+
 $header-background: linear-gradient(to bottom,
                                     rgba(147,206,222,1) 0%,
                                     rgba(117,189,209,1) 50%,
@@ -31,6 +33,7 @@ $footer-background: linear-gradient(to bottom,
 
 body {
   font-family: $sans-serif-font;
+  color: $text-color;
 }
 
 .home {
@@ -64,6 +67,26 @@ body {
 
         .desc {
           margin-top: 20px;
+        }
+
+        .social {
+          margin-top: 20px;
+
+          li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 1.5em;
+            padding-left: 15px;
+
+            a {
+              color: $text-color;
+            }
+          }
+
+          &:before{
+            content: "Share";
+            font-weight: bold;
+          }
         }
 
         .badges {
