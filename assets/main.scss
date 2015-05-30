@@ -1,6 +1,11 @@
 ---
 ---
 
+$header-z: 0;
+$main-z: 1;
+
+$footer-height: 50px;
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -16,6 +21,7 @@
 
   header {
     height: 400px;
+    z-index: $header-z;
 
     .sample {
         max-width: 300px;
@@ -24,11 +30,14 @@
 
   main {
     flex: 1;
+    z-index: $main-z;
+
+    background: white;
   }
 
   footer {
-    height: 50px;
-    line-height: 50px;
+    height: $footer-height;
+    line-height: $footer-height;
     text-align: center;
   }
 }
