@@ -18,6 +18,8 @@ $header-background: linear-gradient(to bottom,
                                     rgba(117,189,209,1) 50%,
                                     rgba(73,165,191,1) 100%);
 
+$screen-background: rgb(117,189,209);
+
 $footer-background: linear-gradient(to bottom,
                                     rgba(73,165,191,1) 100%,
                                     rgba(117,189,209,1) 50%,
@@ -101,6 +103,18 @@ body {
       .sample {
         width: 300px;
         display: block;
+
+        .screen {
+          background: $screen-background;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            height: 200px;
+          }
+        }
       }
     }
   }
