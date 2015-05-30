@@ -43,6 +43,11 @@ $header-background: linear-gradient(to bottom,
 
       .info {
         width: 400px;
+        margin-top: 30px;
+
+        .desc {
+          margin-top: 20px;
+        }
 
         .badges {
           li {
