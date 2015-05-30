@@ -63,8 +63,8 @@ body {
         width: 400px;
         margin-top: 30px;
 
-        h1 {
-          font-size: 2.5em;
+        .logo {
+          width: 400px;
         }
 
         .desc {
@@ -115,6 +115,7 @@ body {
       .sample {
         width: 300px;
         display: block;
+        margin-left: 70px;
 
         .screen {
           img {
