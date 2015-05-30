@@ -23,8 +23,16 @@ $footer-height: 50px;
     height: 400px;
     z-index: $header-z;
 
+    display: flex;
+    flex-direction: row;
+
+    .info {
+      width: 400px;
+    }
+
     .sample {
-        max-width: 300px;
+      width: 300px;
+      display: block;
     }
   }
 
