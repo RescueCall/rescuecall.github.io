@@ -117,14 +117,8 @@ body {
         display: block;
 
         .screen {
-          background: $screen-background;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-
           img {
-            height: 200px;
+            width: 100%;
           }
         }
       }
