@@ -33,7 +33,7 @@ class: home
         </li>
       </ul>
     </div>
-    <div class="sample">
+    <div id="iphone" class="sample">
       <div class="device-mockup iphone5 portrait white">
         <div class="device">
           <div class="screen">
@@ -44,7 +44,7 @@ class: home
         </div>
       </div>
     </div>
-    <div class="sample">
+    <div id="android" class="sample">
       <div class="device-mockup galaxy_s5 portrait white">
         <div class="device">
           <div class="screen">
@@ -80,17 +80,20 @@ class: home
     <li>
       <h2>The ultimate productivity tool!</h2>
       <div class="desc">
-        The average human being spends 2.1 years of their lives listening to unbearable conversations. RescueCall solves this problem for good!</div>
+        The average human being spends 2.1 years of their lives listening to unbearable conversations. RescueCall solves this problem for good!
+      </div>
     </li>
     <li>
       <h2>No Internet? No problem!</h2>
       <div class="desc">
         Fake calls are coming even if you don't have Internet or signal. Just remember to keep your phone charged!
+      </div>
     </li>
     <li>
       <h2>Celebrity contacts</h2>
       <div class="desc">
         You can get fake calls from whoever is registered as a contact, so use your imagination and impress your friends!
+      </div>
     </li>
   </ul>
 </main>
@@ -98,3 +101,31 @@ class: home
   &copy; <a href="http://rescuecall.me/">RescueCall</a> is division of The
   Avoiding Life Situations Corporation
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+ function removeElement(id) {
+     var element = document.getElementById(id);
+     element.parentNode.removeChild(element);
+ };
+
+ function isAndroid() {
+     const ua = navigator.userAgent.toLowerCase();
+     return ua.indexOf("android") > -1;
+ };
+
+ function isIPhone() {
+     const ua = navigator.userAgent.toLowerCase();
+     return ua.indexOf("iphone") > -1;
+ };
+
+ $(document).ready(function() {
+     // If the visitor's an android user, delete the iphone sample
+     if(isAndroid()) {
+         removeElement('iphone');
+     }
+     // If the visitor is a Mac/IPhone user, delete the android sample
+     if(isIPhone()) {
+         removeElement('android');
+     }
+ });
+</script>
