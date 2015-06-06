@@ -25,6 +25,20 @@ $footer-background: linear-gradient(to bottom,
                                     rgba(117,189,209,1) 50%,
                                     rgba(147,206,222,1) 0%);
 
+$mobile-size: 640px;
+
+@mixin on-desktop() {
+  @media (min-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin on-mobile() {
+  @media (max-width: $mobile-size) {
+    @content;
+  }
+}
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -54,13 +68,13 @@ body {
     .hero {
       margin: 0 auto;
       margin-top: 20px;
-      width: 1000px;
+      width: 80%;
 
       display: flex;
       flex-direction: row;
 
       .info {
-        width: 400px;
+        width: 50%;
         margin-top: 30px;
 
         .logo {
@@ -149,14 +163,13 @@ a {
 
 .features {
   margin: 25px auto;
-  width: 900px;
+  width: 75%;
   text-align: center;
   overflow: hidden;
 
   li {
     list-style-type: none;
     display: inline-block;
-    float: left;
     width: 300px;
     padding: 25px;
 
