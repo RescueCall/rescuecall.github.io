@@ -67,16 +67,15 @@ body {
 
     .hero {
       margin: 0 auto;
-      margin-top: 20px;
+      margin-top: 70px;
       width: 80%;
 
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
       .info {
-        width: 50%;
-        margin-top: 30px;
-
+        width: 40%;
         .logo {
           width: 400px;
         }
@@ -127,13 +126,19 @@ body {
         }
       }
 
-      .sample {
-        width: 300px;
-        display: block;
+      .samples {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
 
-        .screen {
-          img {
-            width: 100%;
+        .sample {
+          width: 250px;
+          display: block;
+
+          .screen {
+            img {
+              width: 100%;
+            }
           }
         }
       }
