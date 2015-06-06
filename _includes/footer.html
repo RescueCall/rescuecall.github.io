@@ -1,0 +1,32 @@
+<footer>
+  &copy; <a href="http://rescuecall.me/">RescueCall</a> is division of The
+  Avoiding Life Situations Corporation
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+ function removeElement(id) {
+     var element = document.getElementById(id);
+     element.parentNode.removeChild(element);
+ };
+
+ function isAndroid() {
+     const ua = navigator.userAgent.toLowerCase();
+     return ua.indexOf("android") > -1;
+ };
+
+ function isIPhone() {
+     const ua = navigator.userAgent.toLowerCase();
+     return ua.indexOf("iphone") > -1;
+ };
+
+ $(document).ready(function() {
+     // If the visitor's an android user, delete the iphone sample
+     if(isAndroid()) {
+         removeElement('iphone');
+     }
+     // If the visitor is a Mac/IPhone user, delete the android sample
+     if(isIPhone()) {
+         removeElement('android');
+     }
+ });
+</script>
